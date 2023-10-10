@@ -1,5 +1,5 @@
 {
-  "name": "adoptapp3",
+  "name": "adoptapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
   }
 }
