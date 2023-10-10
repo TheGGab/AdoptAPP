@@ -1,0 +1,408 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: papayawhip;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    .logo {
+        max-height: 60px;
+        padding-top: 10px;
+    }
+
+    nav ul, .login ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color: #57b889;
+                }
+            }
+        }
+    }
+
+    .login {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login {
+            margin-top: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; 
+        padding: 0 20px;
+        
+        .logo {
+            max-height: 60px;
+            margin-bottom: 20px;
+        }
+
+        nav ul, .login ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                display: inline;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+/* INICIO */
+
+#index-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ADOPTAR */
+#adopt-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px;
+
+    
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* NOTICIAS */
+
+.not-main {
+    padding: 20px;
+    text-align: center;
+    height: 1200px;
+
+    h1 {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        color: #57b889;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif; 
+    }
+
+    .noticiaspage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        a {
+            display: block;
+        }
+
+        p {
+            text-align: center;
+        }
+
+            img {
+                max-width: 100%;
+                height: 300px;
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .noticiaspage > div {
+              flex-basis: calc(100%); /* Cambia a 2 columnas en pantallas de hasta 1200px */
+            }
+          }
+          
+          @media screen and (max-width: 768px) {
+            .noticiaspage > div {
+                max-width: 100%;
+            }
+          }
+        }          
+
+/* REFUGIOS */
+
+.ref-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas responsivas */
+    gap: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    height: 1200px;
+
+    .Titulo {
+        display: flex;
+        justify-content: center;
+        color: #57b889;
+        margin-top: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .subtit {
+        color: #57b889;
+        margin: 20px 0 20px 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .preguntas {
+        margin: 20px 0 20px 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .refugios {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 80px;
+    }
+
+    /* Estilos para las imágenes */
+    .img-1, .img-2, .img-3 {
+        max-width: 100%;
+        height: 200px; 
+        margin: 30px auto; 
+    }
+
+    .img-2 {
+        width: 250px;
+    }
+
+    @media screen and (max-width: 900px) {
+        .refugios {
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+        }
+    
+        .img-1, .img-2, .img-3 {
+            max-width: 100%;
+            height: 200px; 
+            margin: 10px auto; 
+        }
+    }
+}
+
+/* INICIO DE SESIÓN */
+
+#titinicio img { /* logo top bar */
+    height: 80px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+ }
+
+.my-form {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    width: 100%;
+
+    .my-logo {
+        width: 200px;
+        height: 250px;
+    }
+
+    .titulo-log {
+        text-align: center;
+        color: #57b889;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .my-heading {
+        font-size: 24px;
+        margin: 20px 0;
+    }
+
+    /* Estilos para los campos de formulario */
+    .my-form-floating {
+        margin-bottom: 15px;
+        position: relative;
+        width: 300px;
+
+        .my-form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            pointer-events: none;
+            transition: all 0.3s;
+            transform: translateY(-30px);
+            font-size: 12px;
+            color: #57b889;
+        }
+
+        #my-floatingPassword {
+            margin-top: 30px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .my-form-floating input:focus + label,
+        .my-form-control:not(:placeholder-shown) + label {
+            transform: translateY(-30px);
+            font-size: 12px;
+            color: #e26d5c;
+        }
+    }
+
+    /* Estilos para el checkbox */
+    .my-form-check {
+        display: flex;
+        align-items: center;
+
+        .my-form-check-input {
+            margin-right: 5px;
+        }
+    }
+
+    /* Estilos para los "a" */
+    .link-log a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #57b889;
+
+        &:hover {
+            color: #e26d5c;
+        }
+    }
+
+    /* Estilos para el botón */
+    .my-btn {
+        display: inline-block;
+        background-color: #57b889 !important;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        width: 200px;
+
+        &:hover {
+            background-color: #e26d5c !important;
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: papayawhip;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    clear: both;
+    
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .mailto {
+            font-family: 'Poppins' sans-serif;
+            font-size: 20px;
+            text-decoration: none; 
+            color: #57b889;
+
+            &:hover {
+                color: #e26d5c;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: auto; 
+    }
+}
