@@ -146,31 +146,31 @@ main h1 {
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
 }
-.not-main .noticiaspage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 70px;
-  height: auto;
+.not-main #noticiaspage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
 }
-.not-main .noticiaspage a {
+.not-main #noticiaspage a {
   display: block;
 }
-.not-main .noticiaspage p {
+.not-main #noticiaspage p {
   text-align: center;
+  margin-bottom: 20px;
 }
-.not-main .noticiaspage img {
+.not-main #noticiaspage img {
   max-width: 100%;
   height: 300px;
 }
-@media screen and (max-width: 1200px) {
-  .not-main .noticiaspage > div {
-    flex-basis: 100%;
+@media screen and (max-width: 1600px) {
+  .not-main #noticiaspage {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
   }
 }
-@media screen and (max-width: 768px) {
-  .not-main .noticiaspage > div {
-    max-width: 100%;
+@media screen and (max-width: 1200px) {
+  .not-main #noticiaspage {
+    grid-template-columns: repeat(1, 1fr); /* Una columna */
   }
 }
 
