@@ -157,10 +157,19 @@ main h1 {
     #noticiaspage {
         
             display: grid;
-            grid-template-columns: repeat(3, 1fr); 
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr); 
             gap: 20px;
             margin-top: 30px;
         
+        .not1, .not2, .not3,{
+            grid-row: 1;
+        }
+
+        .not4, .not5, .not6,{
+            grid-row: 2;
+        }
+
         a {
             display: block;
         }
@@ -178,13 +187,13 @@ main h1 {
 
         @media screen and (max-width: 1400px) {
             #noticiaspage {
-              grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+              grid-template-columns: repeat(2, 1fr); 
             }
           }
           
           @media screen and (max-width: 1200px) {
             #noticiaspage {
-              grid-template-columns: repeat(1, 1fr); /* Una columna */
+              grid-template-columns: repeat(1, 1fr); 
             }
         }
         }          

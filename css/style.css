@@ -149,8 +149,15 @@ main h1 {
 .not-main #noticiaspage {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   margin-top: 30px;
+}
+.not-main #noticiaspage .not1, .not-main #noticiaspage .not2, .not-main #noticiaspage .not3 {
+  grid-row: 1;
+}
+.not-main #noticiaspage .not4, .not-main #noticiaspage .not5, .not-main #noticiaspage .not6 {
+  grid-row: 2;
 }
 .not-main #noticiaspage a {
   display: block;
@@ -165,12 +172,12 @@ main h1 {
 }
 @media screen and (max-width: 1400px) {
   .not-main #noticiaspage {
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 1200px) {
   .not-main #noticiaspage {
-    grid-template-columns: repeat(1, 1fr); /* Una columna */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
