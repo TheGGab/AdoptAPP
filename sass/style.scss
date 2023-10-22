@@ -143,7 +143,7 @@ main h1 {
 .not-main {
     padding: 20px;
     text-align: center;
-    height: auto;
+    
 
     h1 {
         margin: 0;
@@ -159,7 +159,7 @@ main h1 {
         flex-wrap: wrap;
         justify-content: space-around;
         margin-top: 70px;
-        margin-bottom: 200px;
+        height: auto;
 
         a {
             display: block;
@@ -198,7 +198,7 @@ main h1 {
     width: 100%;
     margin-top: 20px;
     justify-content: center;
-    height: 800px;
+    
 
     .Titulo {
         display: flex;
@@ -210,12 +210,12 @@ main h1 {
 
     .subtit {
         color: #57b889;
-        margin: 20px 0 20px 10px;
+        margin: 40px 0 20px 10px;
         font-family: 'Poppins', sans-serif;
     }
 
     .preguntas {
-        margin: 20px 0 20px 10px;
+        margin: 40px 0 20px 10px;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -223,6 +223,7 @@ main h1 {
         display: flex;
         justify-content: space-evenly;
         margin-top: 80px;
+        margin-bottom: 150px;
     }
 
     /* Estilos para las imágenes */
@@ -390,6 +391,7 @@ footer {
     padding: 20px;
     box-sizing: border-box;
     clear: both;
+    margin-top: auto;
     
     
     .container {
