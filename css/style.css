@@ -137,7 +137,7 @@ main h1 {
 .not-main {
   padding: 20px;
   text-align: center;
-  height: 1200px;
+  height: auto;
 }
 .not-main h1 {
   margin: 0;
@@ -151,7 +151,8 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 70px;
+  margin-bottom: 200px;
 }
 .not-main .noticiaspage a {
   display: block;
@@ -165,7 +166,7 @@ main h1 {
 }
 @media screen and (max-width: 1200px) {
   .not-main .noticiaspage > div {
-    flex-basis: 100%; /* Cambia a 2 columnas en pantallas de hasta 1200px */
+    flex-basis: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -183,7 +184,7 @@ main h1 {
   width: 100%;
   margin-top: 20px;
   justify-content: center;
-  height: 1200px;
+  height: 800px;
   /* Estilos para las imágenes */
 }
 .ref-main .Titulo {
@@ -360,7 +361,6 @@ footer .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 footer .container .mailto {
   font-family: "Poppins" sans-serif;
