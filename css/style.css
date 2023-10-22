@@ -101,6 +101,15 @@ header .login {
 }
 
 /* ADOPTAR */
+main h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  color: #57b889;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
 #adopt-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
