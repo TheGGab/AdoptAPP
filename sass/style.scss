@@ -1,3 +1,5 @@
+@import 'typography';
+@import 'color';
 body {
     margin: 0;
     padding: 0;
@@ -25,6 +27,7 @@ header {
         li {
             display: inline;
             margin-right: 20px;
+            margin-bottom: 20px;
 
             a {
                 text-decoration: none;
